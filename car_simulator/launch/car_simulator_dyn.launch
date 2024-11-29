@@ -1,0 +1,15 @@
+<launch>
+
+<rosparam param="/use_sim_time">true</rosparam>
+
+<!--- Run single track simulator node -->
+
+  <node pkg="car_simulator" type="car_simulator_dyn" respawn="false" name="car_simulator" output="screen">
+    <rosparam file="$(find car_simulator)/config/car_simulator.yaml" command="load" />
+  </node> 
+<!--- Run test single track simulator node -->
+  <node pkg="car_simulator" type="car_test" respawn="false" name="car_test" output="screen">
+    <rosparam file="$(find car_simulator)/config/car_simulator.yaml" command="load" />
+  </node> 
+  
+</launch>

@@ -1,0 +1,28 @@
+# Car dynamic model 
+/car_simulator/car_model: 0 #single track model= {0(Linear), 1(Fiala with saturation), 2(Fiala without saturation)}
+
+# Simulation parameters
+/car_simulator/dt: 0.001        # Integration step [s]
+
+# Bicycle model parameters
+/car_simulator/m: 0.5           # Vehicle mass [Kg]
+/car_simulator/Iz: 0.023         # Yaw inertia  [Kg*m^2]
+
+/car_simulator/a: 0.14          # Distance of center of gravity from front axes [m]
+/car_simulator/b: 0.12          # Distance of center of gravity from rear axes  [m]
+
+/car_simulator/L: 0.26          # Vehicle lentgh  [m]
+
+
+/car_simulator/mu: 0.385        # Friction coefficent [adimensional]
+/car_simulator/Cf: 50.0         # Front cornering stiffness [N/rad]
+/car_simulator/Cr: 120.0        # Rear cornering stiffness  [N/rad]
+
+# Initial state
+/car_simulator/r0:    0.0   # Initial yaw rate   [rad/s]
+/car_simulator/Beta0: 0.0   # Initial sideslip   [rad]
+/car_simulator/x0:    0.0   # Initial x position [m]
+/car_simulator/y0:    0.0   # Initial y position [m]
+/car_simulator/theta0:  0.0   # Initial heading (kin model)[rad]
+/car_simulator/psi0:  0.0   # Initial heading    [rad]
+
