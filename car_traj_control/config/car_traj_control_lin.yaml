@@ -1,0 +1,25 @@
+# Car dynamic model 
+/car_traj_control/car_model: 0 #single track model= {0(Linear), 1(Fiala with saturation), 2(Fiala without saturation)}
+
+# Initial state
+/car_traj_control/x0:    0.0     # Initial x position [m]
+/car_traj_control/y0:    0.0     # Initial y position [m]
+/car_traj_control/theta0:  0.0   # Initial heading    [rad]
+
+
+## --- Trajectory parameters (8-shaped) ---
+/car_traj_control/amplitude: 2.0   # Trajectory amplitude  [m]
+/car_traj_control/T:         2.7   # Trajetory period      [s]
+/car_traj_control/L:         0.26  # Vehicle length        [m]
+
+# Proportional control gains
+/car_traj_control/Kpx:         10.0   # x state proportional gain     [1/s]
+/car_traj_control/Kpy:         10.0   # y state proportional gain     [1/s]
+
+# integral time constants
+/car_traj_control/Tix:         30.0   # x state integral time constant [1/s]
+/car_traj_control/Tiy:         30.0  # y state integral time constant [1/s] 
+
+/car_traj_control/Ts:          0.001 # sampling time  
+
+/car_traj_control/P_dist:  0.12   # fblin reference point distance [m]
