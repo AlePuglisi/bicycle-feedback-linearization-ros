@@ -5,8 +5,8 @@ This repository contains both the code and the report of the  final assignment o
 ## Introduction 
 In this project, I developed a trajectory-tracking controller for a car-like robot, modeled with the bicycle model.<br/>
 
-<image width=300 height=300 src=https://github.com/user-attachments/assets/24161273-1794-4659-938e-fbd22894d791>
-<image width=700 height=300 src=https://github.com/user-attachments/assets/235a15a2-6b35-4652-baa5-c94485eeee07>
+<image width=200 height=200 src=https://github.com/user-attachments/assets/24161273-1794-4659-938e-fbd22894d791>
+<image width=500 height=200 src=https://github.com/user-attachments/assets/235a15a2-6b35-4652-baa5-c94485eeee07>
 
 Both kinematic and dynamic (linear and fiala tyre) models are analyzed. <br/>
 The control scheme is based on an inner feedback linearization (based on the kinematic model), transforming the system model to the canonical unicycle.</br> 
@@ -95,16 +95,17 @@ To test if the odeint simulator is working, car_test publishes some test command
 
 - Performance analysis and plot:<br/>
 
-The Python [script](https://github.com/AlePuglisi/bicycle-feedback-linearization-ros/blob/main/car_traj_control/script/plot_result.py) to visualize robot xy-plane trajectory and useful insight signals over time, is based on ``rosbag`` readings, and ``matplotlib``.
-
-This script is executed by (being on the script folder): 
-```
-python3 plot_result.py <bag_name>
-```
-
-The argument "bag_name" refers to the name of a recorded bag over the whole simulation lifetime.<br/> 
-This bag is saved in the same folder as this Python script. 
-(Some bags are already present there, and are the ones used for the report results)
+   The Python [script](https://github.com/AlePuglisi/bicycle-feedback-linearization-ros/blob/main/car_traj_control/script/plot_result.py) to visualize robot xy-plane trajectory and useful insight signals over time, is based on       
+   ``rosbag`` readings, and ``matplotlib``.
+   
+   This script is executed by (being on the script folder): 
+   ```
+   python3 plot_result.py <bag_name>
+   ```
+   
+   The argument "bag_name" refers to the name of a recorded bag over the whole simulation lifetime.<br/> 
+   This bag is saved in the same folder as this Python script. 
+   (Some bags are already present there, and are the ones used for the report results)
 
 ## Conclusion
 
