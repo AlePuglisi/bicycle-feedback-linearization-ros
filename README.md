@@ -28,18 +28,47 @@ Look at the [assignment](https://github.com/AlePuglisi/bicycle-feedback-lineariz
 
 ## Packages description
 
+<image width=700 height=200 src=https://github.com/user-attachments/assets/6ad6011d-76cf-4787-b158-0272aa942465>
+<br/>
+
+The packages of this project are: 
+
+- ``car_simulator``:<br/>
+Responsible for kin/dyn model simulation.
+- ``car_traj_control``:<br/>
+Provide the control feedback linearization + PI control law. 
+
 >[!NOTE]
 > For a clean code, the executables are organized as follows:<br/>
 > Executables of ``car_simulator`` are:
 > - "simulator", with the ROS node functions implementation
 > - "simulator"_ode, with the modeling and odeint related functions
 > - "simulator"_node, just initialize and run the node<br/>
+>
 > Executables of ``car_traj_control`` are:<br/>
 > - car_fblin, implement feedback linearization
 > - car_traj_control, ROS node functions implementation and control law computation
 > - car_traj_control_node, just initialize and run the node
 
+
 ## Run the Code
+First, clone this repo in your ros workspace 
+```
+git clone https://github.com/AlePuglisi/bicycle-feedback-linearization-ros.git
+```
+build and source your workspace, and you are ready to use it!
+
+```
+# Terminal 0, always remember roscore!
+roscore
+```
+
+- Simulation test:
+  
+- Control and simulation:
+  
+- Performance analysis and plot:
+  
 
 ## Conclusion
 
