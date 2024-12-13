@@ -97,7 +97,7 @@ To test if the odeint simulator is working, car_test publishes some test command
 
 The Python [script](https://github.com/AlePuglisi/bicycle-feedback-linearization-ros/blob/main/car_traj_control/script/plot_result.py) to visualize robot xy-plane trajectory and useful insight signals over time, is based on ``rosbag`` readings, and ``matplotlib``.
 
-This script is executed by: 
+This script is executed by (being on the script folder): 
 ```
 python3 plot_result.py <bag_name>
 ```
@@ -108,7 +108,11 @@ This bag is saved in the same folder as this Python script.
 
 ## Conclusion
 
-This project 
+This project provides ROS-based software for the simulation and trajectory control of a car-like robot through a bicycle model.<br/>
+Experimenting with the PI control gains [here](https://github.com/AlePuglisi/bicycle-feedback-linearization-ros/tree/main/car_traj_control/config), can help to understand the effect of PI control law on a trajectory tracking controller.<br/>
+Also, this simulation approach is very different from the classical one but provides a white-box simulation approach for simple systems, that ensures its behavior.
+
+
 
 
 
