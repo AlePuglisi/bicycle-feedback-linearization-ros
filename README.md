@@ -56,19 +56,45 @@ First, clone this repo in your ros workspace
 ```
 git clone https://github.com/AlePuglisi/bicycle-feedback-linearization-ros.git
 ```
-build and source your workspace, and you are ready to use it!
+Build and source your workspace, and you are ready to use it!
 
 ```
 # Terminal 0, always remember roscore!
 roscore
 ```
 
-- Simulation test:
-  
-- Control and simulation:
-  
+- Simulation test:<br/>
+To test if the odeint simulator is working, car_test publishes some test commands to see if the system behaves as expected.
+   - **Kinematic** model: 
+      ```
+      # Terminal 1
+      roslaunch car_simulator car_simulator_kin.launch
+      ```
+   - **Dynamic** model: 
+      ```
+      # Terminal 1
+      roslaunch car_simulator car_simulator_dyn.launch
+      ```
+
+- Control:
+   - **Kinematic** model: 
+      ```
+      # Terminal 1
+      roslaunch car_traj_control car_traj_control_kin.launch
+      ```
+   - **Dynamic Linear Tyre** model: 
+      ```
+      # Terminal 1
+      roslaunch car_traj_control car_traj_control_dynlin.launch
+      ```
+   - **Dynamic Fiala Tyre** model: 
+      ```
+      # Terminal 1
+      roslaunch car_traj_control car_traj_control_dynfiala.launch
+      ```
+
 - Performance analysis and plot:
-  
+
 
 ## Conclusion
 
