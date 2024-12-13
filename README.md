@@ -93,11 +93,22 @@ To test if the odeint simulator is working, car_test publishes some test command
       roslaunch car_traj_control car_traj_control_dynfiala.launch
       ```
 
-- Performance analysis and plot:
+- Performance analysis and plot:<br/>
 
+The Python [script](https://github.com/AlePuglisi/bicycle-feedback-linearization-ros/blob/main/car_traj_control/script/plot_result.py) to visualize robot xy-plane trajectory and useful insight signals over time, is based on ``rosbag`` readings, and ``matplotlib``.
+
+This script is executed by: 
+```
+python3 plot_result.py <bag_name>
+```
+
+The argument "bag_name" refers to the name of a recorded bag over the whole simulation lifetime.<br/> 
+This bag is saved in the same folder as this Python script. 
+(Some bags are already present there, and are the ones used for the report results)
 
 ## Conclusion
 
+This project 
 
 
 
