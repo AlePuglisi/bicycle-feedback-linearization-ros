@@ -18,10 +18,10 @@ For further details on the model equations and parameters, on the reference traj
 
 ## Objective
 Define bicycle model kinematic and dynamic equations, and implement a ROS-based simulation and control software. <br/>
-Use it to tune the PI trajectory tracking controllers and analyze the performance. <br/>
+Use it to tune the PI trajectory tracking controllers (for x,y position control) and analyze the performance. <br/>
 (Notice that the feedback linearization law is based on the kinematic model, for the dynamic model, a perfect linearization is not possible in this way, and performances are not the best)
 
-In this course, we focus on control and modeling, so instead of using classical simulators like Gazebo, we use C++ library odeint for explicit differential equation resolution. 
+In this course, we focus on control and modeling, so instead of using classical simulators like Gazebo, we use C++ library [odeint](https://headmyshoulder.github.io/odeint-v2/) for explicit differential equation resolution. 
 
 
 Look at the [assignment](https://github.com/AlePuglisi/bicycle-feedback-linearization-ros/blob/main/assignment.pdf) for more details.
